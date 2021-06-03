@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body style="background-color: tomato;">
+
+    <div style="height: 15vh;"></div>
+
+    <header style="
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    ">
+        <h3>welcome to my landing page</h3>
+    </header>
+
+    <main>
+        <div style="
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+        ">
+        <form id="myForm" class="form">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+            <label for="pwd">password</label>
+            <input type="password" name="pwd" id="pwd">
+        </form>
+            <button type="submit" style="
+                margin: 4px;
+            ">submit</button>
+        </div>
+    </main>
+
+    <footer style="
+        margin: 15px;
+        height: 15vh;
+        text-align: center;
+    ">made by chavez in 2021
+    </footer>
+
+    <script>
+        const myForm = document.getElementById('myForm');
+
+        myForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const request = new XMLHttpRequest();
+
+            request.open('POST', 'login.php', true);
+            request.onload = function(){
+                console.log(request.responseText);
+            }
+            request.send(new FormData(myForm));
+        });
+    </script>
+
+</body>
+</html>
