@@ -1,0 +1,32 @@
+body{
+    background-color: tomato;
+}
+
+header{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.divs{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    margin: auto;
+    height: 20vh;
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+     padding: 10px;
+}
+
+.bottom{
+    margin: 15px;
+    height: 15vh;
+    text-align: center;
+}
