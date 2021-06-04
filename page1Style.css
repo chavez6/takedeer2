@@ -25,11 +25,11 @@ main{
 }
 
 label{
-    font-size: 2vw;
+    font-size: clamp(10px, 2vw, 17px);
 }
 
 footer{
-    font-size: 2vw;
+    font-size: clamp(13px, 2vw, 22px);
     height: 7vh;
     line-height: 7vh;
 }
@@ -42,15 +42,13 @@ footer{
 
 .main{
     margin: auto;
-    margin-top: 5px;
-    height: 15vh;
+    height: 100%;
     display: flex;
     /* flex-direction: column;
     flex-wrap: wrap; */
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-     padding: 10px;
 }
 
 .bottom{
