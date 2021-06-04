@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>landing</title>
     <link rel="stylesheet" href="page1Style.css">
+    <script defer src="pageCode.js"></script>
 </head>
 <body>
 
@@ -15,24 +16,25 @@
 
     <main>
         <div class="main">
-        <form id="myForm" class="form">
+        <form id="form" name="formbro">
             <div class="divs">
                 <label for="name">name</label>
                 <input type="text" name="name" id="name">
             </div>
             <div class="divs">
-                <label for="pwd">password</label>
-                <input type="password" name="pwd" id="pwd">
+                <label for="email">password</label>
+                <input type="password" name="password" id="password" autocomplete="on">
+            </div>
+            <div class="divs">
+                <input type="button" onclick="submitForm()" value="submit" id="button">
             </div>
         </form>
-            <button type="submit" style="
-                margin: 4px;
-            ">submit</button>
+            
         </div>
     </main>
 
     <footer class="bottom">
-        made by chavez in 2021
+        <small>made by chavez in 2021</small>
     </footer>
 
 </body>
