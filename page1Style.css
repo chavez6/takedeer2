@@ -9,7 +9,45 @@ header{
     margin: auto;
     padding: 10px;
     text-align: center;
-    color: #f0932b;
+}
+
+p {
+    -webkit-animation: color-change 5s infinite;
+    -moz-animation: color-change 5s infinite;
+    -o-animation: color-change 5s infinite;
+    -ms-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+    display: inline-block;
+}
+
+@-webkit-keyframes color-change{
+    0% { color: #f0932b; }
+    50% { color: blueviolet; }
+    100% { color: #f0932b; }
+}
+
+@-moz-keyframes color-change{
+    0% { color: #f0932b; }
+    50% { color: blueviolet; }
+    100% { color: #f0932b; }
+}
+
+@-ms-keyframes color-change {
+    0% { color: #f0932b; }
+    50% { color: blueviolet; }
+    100% { color: #f0932b; }
+}
+
+@-o-keyframes color-change{
+    0% { color: #f0932b; }
+    50% { color: blueviolet; }
+    100% { color: #f0932b; }
+}
+
+@keyframes color-change{
+    0% { color: #f0932b; }
+    50% { color: blueviolet; }
+    100% { color: #f0932b; }
 }
 
 main{
@@ -20,7 +58,7 @@ main{
     height: 20vh;
     min-height: 200px;
     align-items: center;
-    border: .5px solid #f0932b;
+    border: .5px solid blueviolet;
     background-color: cornflowerblue;
     max-height: 300px;
     justify-items: center;
@@ -39,16 +77,23 @@ input{
 
 a{
     text-decoration: none;
-    color: black;
+    color: blueviolet;
     transition-property: color;
     transition-duration: .2s;
 }
 
 footer{
+    margin: auto;
+    padding: 20px;
     font-size: clamp(13px, 2vw, 15px);
     height: 7vh;
-    line-height: 7vh;
+    /* line-height: 7vh; */
     color: cornflowerblue;
+    text-align: center;
+}
+
+.bottom{
+    
 }
 
 .divs{
@@ -66,12 +111,6 @@ footer{
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-}
-
-.bottom{
-    margin: 15px;
-    height: 15vh;
-    text-align: center
 }
 
 #button{
