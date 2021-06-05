@@ -4,6 +4,11 @@ function createAccount(){
     const newPassConfirm = document.getElementById('newPassConfirm').value;
         if (newPass === newPassConfirm){
             console.log('same')
+            const passWarning = document.getElementById('passWarning');
+            if (passWarning.classList.contains('form--hidden') == false){
+                passWarning.classList.add('form--hidden')
+            };
+                
         }else{
             const passWarning = document.getElementById('passWarning');
             passWarning.classList.remove('form--hidden');
