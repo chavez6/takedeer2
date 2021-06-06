@@ -1,0 +1,146 @@
+body{
+    height: 95vh;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+header{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    -webkit-animation: color-change 5s infinite;
+    -moz-animation: color-change 5s infinite;
+    -o-animation: color-change 5s infinite;
+    -ms-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+    display: inline-block;
+}
+
+@-webkit-keyframes color-change{
+    0% { color: red; }
+    25%{ color: blueviolet; }
+    75% { color: #f0932b; }
+    100% { color: red;}
+}
+
+@-moz-keyframes color-change{
+    0% { color: red }
+    25% { color: blueviolet; }
+    75% { color: #f0932b; }
+    100% { color: red;}
+}
+
+@-ms-keyframes color-change {
+    0% { color: red; }
+    25% { color: blueviolet; }
+    75% { color: #f0932b; }
+    100% { color: red;}
+}
+
+@-o-keyframes color-change{
+    0% { color: red; }
+    25% { color: blueviolet; }
+    75% { color: #f0932b; }
+    100% { color: red;}
+}
+
+@keyframes color-change{
+    0% { color: red; }
+    25% { color: blueviolet; }
+    75% { color: #f0932b; }
+    100% { color: red;}
+}
+
+main{
+    margin: auto;
+    width: 35vw;
+    min-width: 250px;
+    max-width: 300px;
+    height: 26vh;
+    min-height: 200px;
+    align-items: center;
+    border: .5px solid blueviolet;
+    background-color: cornflowerblue;
+    max-height: 300px;
+    justify-items: center;
+}
+
+label{
+    font-size: clamp(10px, 2vw, 17px);
+}
+
+input{
+    outline: none;
+    border: 1px solid black;
+    background: transparent;
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+    transition-property: color;
+    transition-duration: .2s;
+}
+
+footer{
+    margin: auto;
+    padding: 10px;
+    font-size: clamp(13px, 2vw, 15px);
+    text-align: center;
+}
+
+.form--hidden{
+    display: none;
+}
+
+.divs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    margin: 4px;
+    width: 60px;
+    border: 1px solid black;
+    background: transparent;
+    transition-property: background;
+    transition-duration: .2s;
+}
+
+.button:hover{
+    background: #f0932b;
+}
+
+.button:active{
+    background: red;
+}
+
+a:hover{
+    color: #f0932b;
+}
+
+a:active{
+    color: red;
+}
+
+#passWarning{
+    color: red;
+    font-size: clamp(10px, 2vw, 13px);
+    text-align: center;
+    margin: 0%;
+}

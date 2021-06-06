@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>takedeer</title>
+    <link rel="stylesheet" href="signInStyles.css">
+    <script defer src="signIn.js"></script>
+</head>
+<body>
+    <div style="height: 30vh;"></div>
+
+    <header>
+        <h3>
+            <small>
+                <p><span style="color:cornflowerblue">welcome to</span> takedeer.com</p>
+            </small>
+        </h3>
+    </header>
+
+    <!-- <div><h5 class="form--hidden" id="passWarning">passwords do not match.</h5></div> -->
+
+    <main>
+        <div class="main">
+            <b id="signInText"><small>sign in</small></b>
+            <form id="signIn" name="formbro">
+                <div class="divs">
+                    <label for="name"><small>username</small></label>
+                    <input type="text" name="name">
+                </div>
+                <div class="divs">
+                    <label for="email"><small>password</small></label>
+                    <input type="password" name="password" autocomplete="on">
+                </div>
+                <div class="divs">
+                    <input type="button" value="submit" class="button" id="signInButton">
+                </div>
+                <div class="divs" style="
+                font-size: clamp(10px, 2vw, 16px); 
+                margin: 5px; 
+                flex-direction: row;
+                ">
+                don't have an account? <a id="linkCreate" style="margin-left: 5px;">sign up</a>
+            </div>
+            </form>
+
+            <b id="signUpText" class="form--hidden"><small>sign up</small></b>
+            <form id="signUp" class="form--hidden" name="formbro">
+                <div class="divs">
+                    <label for="name"><small>username</small></label>
+                    <input type="text" name="name" id="newUser">
+                </div>
+                <div class="divs">
+                    <label for="email"><small>password</small></label>
+                    <input type="password" name="password" id="newPass" autocomplete="on">
+                </div>
+                <div class="divs">
+                    <label for="confirm"><small>confirm password</small></label>
+                    <input type="password" name="confirm" id="newPassConfirm" autocomplete="on">
+                </div>
+                <div class="divs">
+                    <input type="button" value="submit" class="button" id="signUpButton">
+                </div>
+                <div class="divs" style="
+                font-size: clamp(10px, 2vw, 16px); 
+                margin: 5px; 
+                flex-direction: row;
+                ">
+                have an account? <a id="linkLogin" style="margin-left: 5px;">sign in</a>
+            </div>
+            </form>
+            <div><h5 class="form--hidden" id="passWarning">passwords do not match.</h5></div>
+        </div>
+    </main>
+
+    <footer>
+        <h6><small><p>
+            <span style="color: cornflowerblue;">made by</span> Chavez Pettit 
+            <span style="color: cornflowerblue;">in 2021</span>
+        </p></small></h6>
+    </footer>
+</body>
+</html>
